@@ -52,7 +52,10 @@ const setcomplete = (id) =>{
        <div class="addtack">
         <input onChange={handlechange}/>
         <button onClick={addtask}>Add task</button>
-        {todo.map((task) => {
+        
+       </div>
+<div class="task">
+ {todo.map((task) => {
           return(
             <Task  
             taskname={task.taskname} 
@@ -64,7 +67,7 @@ const setcomplete = (id) =>{
               
         }
         )}
-       </div>
+ </div>
     </div>
   );
 }
